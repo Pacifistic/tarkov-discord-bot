@@ -1,0 +1,8 @@
+query ItemsList {
+    items {
+        id
+        name
+        shortName
+        normalizedName
+    }
+}

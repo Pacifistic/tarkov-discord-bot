@@ -1,0 +1,19 @@
+query ItemDetails($id: ID!) {
+  item(id: $id) {
+    basePrice
+    lastLowPrice
+    avg24hPrice
+    link
+    iconLink
+    __typename
+    sellFor {
+      priceRUB
+      __typename
+      vendor {
+        __typename
+        name
+      }
+    }
+    name
+  }
+}
